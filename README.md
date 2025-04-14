@@ -134,7 +134,6 @@ sns.set_theme(font='Malgun Gothic', rc={'axes.unicode_minus' : False})
 
 - [노트북](./day01/mldl02_훈련테스트세트.ipynb)
 
-
 ## 2일차
 
 ### 빅데이터에 필요한 모듈
@@ -158,7 +157,6 @@ sns.set_theme(font='Malgun Gothic', rc={'axes.unicode_minus' : False})
 <img src="./image/ml004.png" width="500">
 
 - K-최근접 이웃 회귀 알고리즘 문제점 확인
-
 
 - 선형회귀 중 직선(1차 방정식)의 문제점 확인
 
@@ -335,6 +333,35 @@ sns.set_theme(font='Malgun Gothic', rc={'axes.unicode_minus' : False})
 ## 5일차
 
 ### 합성곱신경망
+- CNN(Convolution Neural Network)    
+    - 필터로 도장을 찍듯이 특성을 뽑아내어 사이즈를 줄여가며 훈련을 하는 신경망
+
+    <img src="./image/ml012.png" width=600>
+
+- 기본용어
+    - 커널(필터) - 입력에 곱하는 가중치 도장. 뉴런의 개수를 필터라고 부름
+    - 특성 맵 - 합성곱 계산(각 커널과 입력을 곱한 출력)으로 구해진 출력값
+
+- 각각의 가중치로 다시 특성맵을 여러번 생성
+
+    <img src="./image/ml013.png" width=600>
+
+- 기본용어
+    - 패딩 - 입력이미지 테두리로 0을 채워서, 합성곱 계산 후로 입력과 동일한 사이즈의 특성맵을 만드는 방법. 0을 채우는 걸 세임 패딩, 순수 입력으로 합성곱하는 걸 밸리드 패딩
+    - 스트라이드 - 커널 도장을 찍는 이동크기. 보통 1로하고 2이상으로 하면 세임패딩을 하더라도 특성맵의 사이즈가 줄어듬
+    - 풀링 - 만들어진 특성맵의 크기를 줄이는 작업 수행. 보통 최대풀링을 많이 사용
+
+    <img src="./image/ml014.png" width=600>
+
+- 합성곱신경망 전체 구조
+
+    <img src="./image/ml015.png" width=750>
+
+- 이미지 처리시 머신러닝 로지스틱 회귀 분류로도 가능하고
+- 딥러닝 기본 신경망으로도 가능했음
+- 합성곱 신경망을 훈련하고 예측하는 것이 좀 더 정확도 높음
+
+- [노트북]()
 
 ### 파이토치
 
