@@ -173,3 +173,5 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 /mlvenv
+day07/dogs-vs-cats.zip
+/day07/data
